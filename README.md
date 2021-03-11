@@ -21,3 +21,9 @@ Run the  below command where the app needs to be created
 * In order to preload all static files run `python manage.py collectstatic` command
 * The above command copies all static files from all static directory of apps in to the `static` dir of the project.
 * Created a path with `STATIC_ROOT` string variable and `STATICFILES_DIRS` list in settings.py of the project.
+
+### Bootstrap files
+
+* Add components of webpage in `base.html` by linking it to the files  `templates/partials` dir
+* ` {% load static %}` to load all static files in current html
+* `{% include 'partials/_topbar.html'%}` to load the contents of `_topbar.html` in current file.
