@@ -2,6 +2,7 @@
 Learning Django from Udemy Course [Demo Website of BT real estate]
 
 ### Apps
+
 Run the  below command where the app needs to be created
 `python manage.py startapp <app_name>`
 
