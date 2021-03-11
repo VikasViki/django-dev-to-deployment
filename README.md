@@ -14,3 +14,9 @@ Run the  below command where the app needs to be created
 
 * Path to the templates directory need to be specified in **TEMPLATES** list in settings.py of the project.
 * Above points helps in accessing the templates anywhere inside the app
+
+### Static Files
+
+* In order to preload all static files run `python manage.py collectstatic` command
+* The above command copies all static files from all static directory of apps in to the `static` dir of the project.
+* Created a path with `STATIC_ROOT` string variable and `STATICFILES_DIRS` list in settings.py of the project.
