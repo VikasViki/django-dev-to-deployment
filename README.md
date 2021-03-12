@@ -27,3 +27,8 @@ Run the  below command where the app needs to be created
 * Add components of webpage in `base.html` by linking it to the files  `templates/partials` dir
 * ` {% load static %}` to load all static files in current html
 * `{% include 'partials/_topbar.html'%}` to load the contents of `_topbar.html` in current file.
+
+### Linking NavBar to html pages
+
+* `{% url 'index' %}` index in url name specified in urls.py inside pages app.
+* `{% if '/' == request.path %}` this template tag checks whether current path is the root path, in order to implement dynamic behaviours inside a webpage. request.path is a string path.
