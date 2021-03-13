@@ -3,8 +3,7 @@ Learning Django from Udemy Course [Demo Website of BT real estate]
 
 ### Apps
 
-Run the  below command where the app needs to be created
-`python manage.py startapp <app_name>`
+Run `python manage.py startapp <app_name>` command where the app needs to be created.
 
 **Make sure to add <app_name> to INSTALLED_APPS list in settings.py of the project**
 
@@ -32,3 +31,8 @@ Run the  below command where the app needs to be created
 
 * `{% url 'index' %}` index in url name specified in urls.py inside pages app.
 * `{% if '/' == request.path %}` this template tag checks whether current path is the root path, in order to implement dynamic behaviours inside a webpage. request.path is a string path.
+
+### Linking Database to Project
+
+* `psycopg2` pip package is used to connect to postgress database from python.
+* New items added in DATABASES dict in settings.py of the project i.e NAME, USER, PASSWORD, HOST and changed the engine name from sqlite3 to postgresql. 
