@@ -35,4 +35,10 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 ### Linking Database to Project
 
 * `psycopg2` pip package is used to connect to postgress database from python.
-* New items added in DATABASES dict in settings.py of the project i.e NAME, USER, PASSWORD, HOST and changed the engine name from sqlite3 to postgresql. 
+* New items added in DATABASES dict in settings.py of the project i.e NAME, USER, PASSWORD, HOST and changed the engine name from sqlite3 to postgresql.
+
+### Creating Model - listing
+
+* All fields of the model will be created as variable insidel models.py of the app.
+* Any app can be imported using `import <app_name>` inside the project
+* Reference to the model fields : https://docs.djangoproject.com/en/3.1/ref/models/fields/
