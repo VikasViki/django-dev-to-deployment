@@ -37,8 +37,13 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 * `psycopg2` pip package is used to connect to postgress database from python.
 * New items added in DATABASES dict in settings.py of the project i.e NAME, USER, PASSWORD, HOST and changed the engine name from sqlite3 to postgresql.
 
-### Creating Model - listing
+### Creating Model - listing, realtor
 
-* All fields of the model will be created as variable insidel models.py of the app.
+* All fields of the model will be created as variable inside models.py of the app.
 * Any app can be imported using `import <app_name>` inside the project
 * Reference to the model fields : https://docs.djangoproject.com/en/3.1/ref/models/fields/
+
+### Making Migrations to Database
+
+* Once models are created run `python manage.py makemigrations`, it creates a file inside `migrations` directory of the corresponding app.
+* After running `python manage.py migrate`, we can see the **<app_name>_<model_name>** table inside the database.
