@@ -47,3 +47,8 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 
 * Once models are created run `python manage.py makemigrations`, it creates a file inside `migrations` directory of the corresponding app.
 * After running `python manage.py migrate`, we can see the **<app_name>_<model_name>** table inside the database.
+
+### Adding Apps to admin area
+
+* Import the models created inside models.py of corresponding app.
+* Register the model using `admin.site.register(<model_name>)` inside admins.py of the corresponding app.
