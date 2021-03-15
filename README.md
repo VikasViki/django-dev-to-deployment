@@ -52,3 +52,8 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 
 * Import the models created inside models.py of corresponding app.
 * Register the model using `admin.site.register(<model_name>)` inside admins.py of the corresponding app.
+
+### Adding data to models from admin area
+
+* Added two variables MEDIA_ROOT and MEDIA_URL inside settings.py of the project.
+* Linked **MEDIA_URL** to **urlpatterns** inside urls.py of the project using static method and attributes of **settings** module which is present inside **django.conf**.
