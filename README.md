@@ -57,3 +57,9 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 
 * Added two variables MEDIA_ROOT and MEDIA_URL inside settings.py of the project.
 * Linked **MEDIA_URL** to **urlpatterns** inside urls.py of the project using static method and attributes of **settings** module which is present inside **django.conf**.
+
+### Modifying Admin Page
+
+* Cretate base_site.html inside `templates/admin/` directory. This over writes the default wrapper of django.
+* Add `{% extends 'admin/base.html' %}` as first line inside the new file in order keep all functionalities intact of the admin panel.
+* CSS of the admin page is overridden by new file created at `<project_name>/static/css/admin.css`.
