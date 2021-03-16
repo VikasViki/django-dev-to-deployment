@@ -72,4 +72,10 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 ### Connecting Webpage to model's database
 
 * Inside views.py of the corresponding app pass QuerySet obtained from `<model_name>.objects.all()` in the form dictionary to the render method.
-* This Query set can be used inside <model_name>.html using jinja template. 
+* This Query set can be used inside <model_name>.html using jinja template.
+
+### Used Models properties inside template
+
+* `{{ <variable_name>.<property_name> }}` is used to access the value of a record inside the template i.e html page.
+* humanize app is used to make properties like price into comma separated values and published date into time passed since published.
+**Reference** : https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
