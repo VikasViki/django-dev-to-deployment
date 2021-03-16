@@ -63,3 +63,8 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 * Cretate base_site.html inside `templates/admin/` directory. This over writes the default wrapper of django.
 * Add `{% extends 'admin/base.html' %}` as first line inside the new file in order keep all functionalities intact of the admin panel.
 * CSS of the admin page is overridden by new file created at `<project_name>/static/css/admin.css`.
+
+### Customizing Admin Display Data
+
+* In order to customize admin display data of a model, create new class inheriting `admin.ModelAdmin`.
+* There are various tuples which provides various functionalities, we can customize display data of the paticular model by overridiing this tuples i.e **list_display, list_display_links, list_filter, list_editable, search_fields, list_per_page**
