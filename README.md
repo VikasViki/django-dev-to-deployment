@@ -66,5 +66,5 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 
 ### Customizing Admin Display Data
 
-* In order to customize admin display data of a model, create new class inheriting `admin.ModelAdmin`.
+* In order to customize admin display data of a model, create new class inheriting `admin.ModelAdmin` inside admin.py of the corresponding app.
 * There are various tuples which provides various functionalities, we can customize display data of the paticular model by overridiing this tuples i.e **list_display, list_display_links, list_filter, list_editable, search_fields, list_per_page**
