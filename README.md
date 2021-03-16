@@ -78,4 +78,13 @@ Run `python manage.py startapp <app_name>` command where the app needs to be cre
 
 * `{{ <variable_name>.<property_name> }}` is used to access the value of a record inside the template i.e html page.
 * humanize app is used to make properties like price into comma separated values and published date into time passed since published.
-**Reference** : https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
+**Reference**
+https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
+
+### Adding Pagination
+
+* After updating context with paginator, various new attributes gets added to the listings [context].
+* We can used **order_by** and **filter** method of the objects class for getting custom result from the model.
+  **References** 
+  https://docs.djangoproject.com/en/3.1/topics/pagination/
+  https://getbootstrap.com/docs/4.1/components/pagination/
