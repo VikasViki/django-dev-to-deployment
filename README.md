@@ -84,7 +84,11 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 ### Adding Pagination
 
 * After updating context with paginator, various new attributes gets added to the listings [context].
-* We can used **order_by** and **filter** method of the objects class for getting custom result from the model.
+* We can use **order_by** and **filter** method of the objects class for getting custom results from the model.
   **References** 
   https://docs.djangoproject.com/en/3.1/topics/pagination/
   https://getbootstrap.com/docs/4.1/components/pagination/
+
+### Adding Dynamic content to index.html page and about.html page
+* We can import any app from any other app inside the project.
+* Using Django ORM extract records from the models and pass it as context to the render method, in order to access the properties of the model inside the webpage using jinja template.
