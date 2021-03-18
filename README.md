@@ -95,4 +95,9 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 
 ### Displaying complete details of single listing
 * Added data to single listing in the similar fashion to multiple listings.
-* get_object_or_404 method is used to throw 404 when given id doesn't exists in the model. 
+* get_object_or_404 method is used to throw 404 when given id doesn't exists in the model.
+
+### Adding Search form to the website
+* Added styling and dynamic data to search.html.
+* Linked this search.html file from search button of the index page.
+* Fetching search options from inbuilt dictionary based storage i.e choices.py inside listings app.
