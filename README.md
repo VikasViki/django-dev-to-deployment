@@ -92,3 +92,7 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 ### Adding Dynamic content to index.html page and about.html page
 * We can import any app from any other app inside the project.
 * Using Django ORM extract records from the models and pass it as context to the render method, in order to access the properties of the model inside the webpage using jinja template.
+
+### Displaying complete details of single listing
+* Added data to single listing in the similar fashion to multiple listings.
+* get_object_or_404 method is used to throw 404 when given id doesn't exists in the model. 
