@@ -106,3 +106,7 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 * When search button is clicked all search parameters with given input values are present in URL path i.e request.GET dictionary object.
 * In order to filter the result based on required conditions special paramter format is used inside QuerySet obtained from the model.
 `<field_name>__<operation>=<field_valuye>` it provides operations like **icontains, iexact, ilte**, the **char 'i'** is for case insensitive search.
+
+### Preserving search input
+* In order to preserve the input user entered in the search bar, passed `request.GET` as `values` inside context dict from views.py of the app.
+* Added **value attribute** inside the corresponding tag, this value is used to display on the field.
