@@ -101,3 +101,8 @@ https://docs.djangoproject.com/en/3.1/ref/contrib/humanize/
 * Added styling and dynamic data to search.html.
 * Linked this search.html file from search button of the index page.
 * Fetching search options from inbuilt dictionary based storage i.e choices.py inside listings app.
+
+### Filtering listings based on search parameters 
+* When search button is clicked all search parameters with given input values are present in URL path i.e request.GET dictionary object.
+* In order to filter the result based on required conditions special paramter format is used inside QuerySet obtained from the model.
+`<field_name>__<operation>=<field_valuye>` it provides operations like **icontains, iexact, ilte**, the **char 'i'** is for case insensitive search.
